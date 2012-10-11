@@ -21,6 +21,16 @@ public class Technology {
 	private String acronym;
 	@Column
 	private String version;
+	@Column(unique = true)
+	private String description;
+	
+	
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
 	public String getAcronym(){
 		return acronym;
 	}
